@@ -1,7 +1,5 @@
 syntax = "proto3";
 
-option go_package = "github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/proto/examplepb";
-
 // Merging Services
 //
 // This is an example of merging two proto files.

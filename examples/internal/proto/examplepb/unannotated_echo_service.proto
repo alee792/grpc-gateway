@@ -1,5 +1,4 @@
 syntax = "proto3";
-option go_package = "github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/proto/examplepb;examplepb";
 
 // Unannotated Echo Service
 // Similar to echo_service.proto but without annotations. See
@@ -48,7 +47,7 @@ service UnannotatedEchoService {
 
 	// EchoBody method receives a simple message and returns it.
 	rpc EchoBody(UnannotatedSimpleMessage) returns (UnannotatedSimpleMessage);
-	
+
 	// EchoDelete method receives a simple message and returns it.
 	rpc EchoDelete(UnannotatedSimpleMessage) returns (UnannotatedSimpleMessage);
 }

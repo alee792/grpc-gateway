@@ -1,5 +1,4 @@
 syntax = "proto3";
-option go_package = "github.com/grpc-ecosystem/grpc-gateway/v2/examples/internal/proto/examplepb";
 
 // Generate Unannotated Methods Echo Service
 // Similar to echo_service.proto but without annotations and without external configuration.
@@ -29,7 +28,7 @@ service GenerateUnboundMethodsEchoService {
 
 	// EchoBody method receives a simple message and returns it.
 	rpc EchoBody(GenerateUnboundMethodsSimpleMessage) returns (GenerateUnboundMethodsSimpleMessage);
-	
+
 	// EchoDelete method receives a simple message and returns it.
 	rpc EchoDelete(GenerateUnboundMethodsSimpleMessage) returns (GenerateUnboundMethodsSimpleMessage);
 }
